@@ -15,8 +15,6 @@ export class AuthenticationService {
   helper = new JwtHelperService();
 
   isAuthenticated() {
-
-      debugger;
     if(this.local.getToken()) {
       this.isLoggedIn = !this.helper.isTokenExpired(this.local.getToken());
       return this.isLoggedIn;

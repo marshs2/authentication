@@ -1,0 +1,10 @@
+<div>
+  <div>UserName: {{decodedToken.username}}</div>
+  <div>Email: {{decodedToken.email}}</div>
+  <div>Gravatar: <img src="{{decodedToken.gravatar}}"/></div>
+  <div>Role: {{decodedToken.role}}</div>
+  <pre>
+  {{decodedToken | json}}
+  </pre>
+</div>
+<button class="btn btn-secondary" routerLink="/home">Go Back</button>
